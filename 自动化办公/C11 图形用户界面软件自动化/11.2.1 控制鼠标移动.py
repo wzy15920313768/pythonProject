@@ -16,3 +16,11 @@ pyautogui.PAUSE = 1
 
 # 相对移动
 pyautogui.move(-100, -100, 1)
+
+# 先慢后快
+pyautogui.moveTo(100, 100, 2, pyautogui.easeInQuad)
+# 先快后慢
+pyautogui.moveTo(100, 500, 1, pyautogui.easeOutQuad)
+# 首尾快，中间慢
+pyautogui.moveTo(500, 500, 2, pyautogui.easeInOutQuad)
+
